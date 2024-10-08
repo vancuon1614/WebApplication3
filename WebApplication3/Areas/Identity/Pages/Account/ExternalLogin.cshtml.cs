@@ -159,6 +159,7 @@ namespace WebApplication3.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
+
                     result = await _userManager.AddLoginAsync(user, info);
                     if (result.Succeeded)
                     {
