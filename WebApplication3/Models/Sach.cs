@@ -13,6 +13,7 @@ namespace WebApplication3.Models
         public string? TenTacGia { get; set; }
         [Required]
         public double Gia { get; set; }
+        public string? Mota { get; set; }
         public string? HinhAnh { get; set; }    
         [Required]
         public int MaTheLoai { get; set; }
